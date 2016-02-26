@@ -1,3 +1,4 @@
+#import any thing needed
 import requests
 import lxml.html
 import csv
@@ -5,11 +6,12 @@ import re
 from lxml import etree
 from lxml import html
 
-
+#this will write the csv of the scarped data into csv format with file name test.scv
 with open('test.csv', 'wb') as csvfile:
     spamwriter = csv.writer(csvfile, delimiter=',',
             quotechar='"', quoting=csv.QUOTE_MINIMAL)
     url = []
+    #loop
     for x in range(1,135):
 
             a = "http://gympp.com/ncr/"+str(x)
