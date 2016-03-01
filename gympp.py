@@ -6,7 +6,7 @@ import re
 from lxml import etree
 from lxml import html
 
-#this will write the csv of the scarped data into csv format with file name test.scv
+#this will write the csv of the scarped data into csv format with file name test.scv in same folder
 with open('test.csv', 'wb') as csvfile:
     spamwriter = csv.writer(csvfile, delimiter=',',
             quotechar='"', quoting=csv.QUOTE_MINIMAL)
